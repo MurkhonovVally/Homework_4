@@ -10,6 +10,7 @@ public class Main {
         task6();
         task7();
     }
+
     public static void task1() {
         System.out.println("Задача 1");
         int age = 15;
@@ -26,6 +27,7 @@ public class Main {
             System.out.println("Если возраст человека равен " + ages + ", он не достиг совершеннолетия, нужно немного подождать");
         }
     }
+
     public static void task2() {
         System.out.println("Задача 2");
         int temperature = 10;
@@ -42,6 +44,7 @@ public class Main {
             System.out.println("Сегодня тепло, можно идти без шапки");
         }
     }
+
     public static void task3() {
         System.out.println("Задача 3");
         int speed = 100;
@@ -58,12 +61,7 @@ public class Main {
             System.out.println("Если скорость " + speedAuto + ", то можно ездить спокойно");
         }
     }
-    /*
-    Если человеку от 2 до 6 лет, то ему нужно ходить в детский сад.
-    Если человеку от 7 до 18 лет, то ему нужно ходить в школу.
-    Если человеку больше 18 лет, но меньше 24, то его место в университете.
-    А если человеку больше 24, то ему пора ходить на работу.
-     */
+
     public static void task4() {
         System.out.println("Задача 4");
         int age = 40;
@@ -82,16 +80,11 @@ public class Main {
         } else {
             System.out.println("Если возраст человека равен " + age + ", то ему не нужно ходить в университет ");
         }
-        if (age >24) {
+        if (age > 24) {
             System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить на работу");
         }
     }
-    /*
-    Если ребенку меньше 5 лет, то он не может кататься на аттракционе.
-    Если ребенку больше 5, но меньше 14 лет, то он может кататься только
-    в сопровождении взрослого. Если взрослого нет, то кататься нельзя.
-    Если ребенок старше 14 лет, то он может кататься без сопровождения взрослого.
-     */
+
     public static void task5() {
         System.out.println("Задача 5");
         int ageChild = 13;
@@ -105,10 +98,33 @@ public class Main {
                     "без сопровождения взрослого");
         }
     }
+
     public static void task6() {
         System.out.println("Задача 6");
+        int wagon = 102;
+        int seating = 60;
+        int standing = 42;
+        int human = 55;
+        if (human <= standing) {
+            System.out.println(" В вагоне есть стоячие места");
+        } else if (human <= seating) {
+            System.out.println("В вагоне есть сидячие места");
+        } else if (human > wagon) {
+            System.out.println("Вагон полностью забит");
+        }
     }
+    
     public static void task7() {
         System.out.println("Задача 7");
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        if (one > two && one > three) {
+            System.out.println("Первое число больше остальных");
+        } else if (two > one && two > three) {
+            System.out.println("Второе чило больше остальных");
+        } else if (three > one && three > two) {
+            System.out.println("Третье число больше остальных");
+        }
     }
 }
